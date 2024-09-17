@@ -1,13 +1,368 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.navbar{
-    display:
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background:  url(./assets/img_1.jpeg) no-repeat ;
+    height: 200p;
+    
+
+
+    
+}
+#aside{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+#aside img{
+    border-radius: 80px;
+}
+aside{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 15vw;
+    position: fixed;
+    /* top: 0; */
+/* }
+.header{
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#bg{
+    width: fit-content;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
 }
 
 aside img{
-    width: 500px;
-    height: 500px;
+    width: 100px;
+    height: 100px;
+} */ 
+
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set basic styles for the body */
+
+
+/* Container for the aside navigation */
+#aside {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color:#050505;
+    color: #fff;
+    padding: 25px;
+}
+.h2{
+    font-size: 15px;
+    color:#cccccc;
+}
+body{
+    display: flex;
+    background-color: black;
+    color: white;
+}
+/* Styling for images inside aside */
+#aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Navigation styling */
+nav {
+    margin: 0px;
+    /* display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center;
+    gap:30px; */ 
+}
+
+.nav-item {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 20px;
+    font-size: xx-large;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+.main {
+    margin-left: 200px;
+    width: 100%;
+    
+}
+
+/* Header styling */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Montserrat";
+    background-image: url(./assets/image/14483658340_999640a582_b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.container1{
+    display:flex;
+    gap:50px;
+}
+.home-content{
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: space-evenly;
+padding: 40px;
+/* width: 50%; */
+gap: 20px;
+
+}
+h1{
+    font-size: xx-large;
+    text-align: center;
+    padding: 50;
+
+}
+span{
+    color: #ffb400;
+}
+.home-icons{
+    display: flex;
+    gap: 20px;
+    
+}
+.icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    padding:15px;
+    
+}
+.num1{
+    color:white;
+    font-weight: 900;
+    font-size:20px;
+}
+#bg{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+#about{
+    padding: 15% 5% 15% 5%;
+    
+    
+}
+.header h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+#back{
+    background-color: #0a0a0a;
+    color: #fff;
+    display: flex;
+    height: 80vh;
+    padding-bottom: 100px;
+    
+}
+
+    
+    
+    
+    
+
+.flex-container{
+    display:flex;
+    gap:40px;
+
+}
+.flex-item ul li{
+    list-style-type: none;
+    color:white;
+    font-size: 18px;
+    line-height: 1.8;
+    
+
+}
+p{
+    color:#cccccc;
+    line-height: 1.8;
+    font-size:17px;
+    margin-bottom:20px;
+}
+.h1{
+   text-align: left;
+   margin-bottom:15px;
+   color:white;
+
+}
+.num{
+    color:#cccccc;
+    font-size:15px;
+}
+h2{
+    font-size:50px;
+    margin-bottom:50px;
+    font-weight: bold;
+}
+
+/* Styling for the logo */
+.logo h1 {
+    font-size: 2em;
+    color: #333;
+   
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    margin-top:30px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
+
+.ab {
+    background-color:#ffb400;
+    color: #fff;
+    width:180px;
+    height:40px;
+    border-radius: 50px;
+}
+
+.cb {
+   
+    color: #fff;
+    width:180px;
+    height:40px;
+    border-radius: 50px;
+    border-color:  #ffb400 ;
+    background-color: #0a0a0a;
+
+    
+}
+
+.ab:hover, .cb:hover {
+    opacity: 0.9;
+    background-color: white;
+    color:#ffb400;
+}
+.ds{
+   /* padding: 50px 20px 50px 20px;
+   gap: 40px; */
+   height: 40vh;
+   margin-left: 40px;
+}
+
+/* Project section styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.skills{
+display: flex;
+flex-wrap: wrap;
+
+
+  
+
+
+    
+}
+.skills div{
+    height: 300px;
+    width: 400px;
+    border: 2px white solid;
+    margin-left: 70px;
+    gap: 30px;
+    margin-top: 10px;
+    text-align: center
+   
+    
+   
+}
+
+
+
+.ser {
+    font-size: 2em;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Contact and footer section styling */
+footer {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+footer i {
+    color: #333;
+    font-size: 2em;
+    margin-right: 10px;
+}
+.abt-me{
+    padding-top: 50px;
+    padding-right: 100px;
 }
