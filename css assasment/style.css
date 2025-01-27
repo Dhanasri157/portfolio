@@ -1,36 +1,166 @@
+/* General Styles */
 * {
-      margin: 0px;
-      padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.head{
-     background-color: #283542;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: #283542;
+    height: 100vh;
     color: #c2c2c2;
-    font-size: 10px;
-    padding: 5px;
+    padding: 20px;
+}
+
+#aside aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav a {
+    display: block;
+    margin: 10px 0;
+    color: #c2c2c2;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #FFD43B;
+}
+
+.aside-icons {
+    position: absolute;
+    bottom: 20px;
+}
+
+.aside-icons .icon {
+    font-size: 24px;
+    color: #c2c2c2;
+    margin: 10px 0;
+}
+
+.aside-icons .icon:hover {
+    color: #FFD43B;
+}
+
+.main {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+section {
+    padding: 40px 0;
+    margin: 20px 0;
+}
+
+/* Home Section */
+#home {
+    background-image: url('https://im.indiatimes.in/content/2023/Jul/apj-abdul-kalam1_64c10614d2207.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.home-content h1 span,
+.home-content h2 span {
+    color: #FFD43B;
+}
+
+.home-icons i {
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* About Section */
+#about {
+    background-color: #f4f4f4;
+}
+
+.container1 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
-
-
- .main{
-    background-image: url(https://im.indiatimes.in/content/2023/Jul/apj-abdul-kalam1_64c10614d2207.jpg);
-    background-repeat: no-repeat;
- }  
- .fl{
-   color: #3084bb;
-   padding: 10px;
-   
-}
-.dl{
-   color: #33b167;
-}
-.li{
-   background-color: #ecf0f1;
-   padding: 10px;
-   margin: 10px;
-
+.fl {
+    flex: 1;
 }
 
-   
- 
+.fl img {
+    width: 100%;
+    height: auto;
+}
+
+/* Skills Section */
+#Skills h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: grid;
+    justify-content:space-evenly;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+
+.skill {
+    text-align: center;
+    width: 150px;
+}
+
+.skill i {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.skill h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9;
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.end2 {
+    flex: 1;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
