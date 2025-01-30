@@ -33,7 +33,15 @@ body{
     justify-content: space-evenly;
 
 }
-
+.aside-icons a{
+    padding: 10px;
+    transition: all 0.5s;
+    border-radius: 50%;
+}
+.aside-icons a:hover{
+    background-color: #ffb400;
+    color: #fff;
+}
 .h2 {
     font-size: 15px;
     color: #cccccc;
@@ -62,6 +70,7 @@ nav {
     align-items: center;
     /* gap:30px; */
 }
+
 
 .nav-item {
     display: block;
@@ -99,8 +108,9 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
-    gap: 100px;
+    height: 70%;
+    gap: 120px;
+    padding: 200px;
 }
 #home {
     display: flex;
@@ -115,9 +125,9 @@ nav {
     /* margin-bottom:5rem ; */
 
 }
-.image{
+
     
-}
+
 .container1 {
     display: flex;
     gap: 50px;
@@ -179,6 +189,7 @@ span {
 #about {
     padding: 15% 5% 15% 5%;
     margin-bottom: 2rem;
+    
 
 
 }
@@ -256,7 +267,7 @@ p {
 h2 {
     font-size: 50px;
     padding-top: 1.5rem;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     font-weight: bold;
 }
 
@@ -321,8 +332,9 @@ ul {
 /* SKILL CONTAINER */
 
 #skills {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
+    flex-direction: column;
     /* max-width: 100%; */
     justify-content: center;
     gap: 2rem;
@@ -340,6 +352,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
 }
 
 .skill .skill-detail .skill-level {
@@ -348,9 +362,9 @@ ul {
     justify-content: space-between;
 }
 .progress-bar{
-    height: 10px;
+    height: 15px;
     width: 100%;
-    border: 1px solid #ffb400;
+    border: 3px solid #ffb400;
     border-radius: 20px;
 }
 .progress-level{
@@ -373,10 +387,10 @@ ul {
     width: 50%;
 }
 .skills-Container .skill {
-    width: 300px;
+    width: 500px;
     /* width: 28rem; */
     height: fit-content;
-    border: 2px white solid;
+    /* border: 2px white solid; */
     padding: 2rem;
     margin: 2rem;
     gap: 2rem;
@@ -409,7 +423,7 @@ h2 {
     font-size: 3rem;
     text-align: center;
     color: #fff;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -421,12 +435,13 @@ h2 {
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
+    padding: 100px;
 }
 
 /* Individual Project Group styling */
 .group-1 {
     background: #000000;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     overflow: hidden;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     width: 350px; /* Slightly larger for a more balanced layout */
@@ -437,6 +452,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Keeps title at the bottom */
+    align-items: center;
 }
 
 /* Hover Effects */
@@ -448,10 +464,14 @@ h2 {
 
 /* Styling for Project Images */
 .project-image {
-    width: 50%;
-    height: 230px; /* Adjusted for better visual balance */
+    width: 30%;
+    height: 150px; /* Adjusted for better visual balance */
     object-fit: cover; /* Ensures the image fills the area without distortion */
     transition: transform 0.4s ease;
+}
+.photos{
+ width: 350px;
+ height: 200px;   
 }
 
 /* Hover effect on the image */
@@ -473,7 +493,7 @@ h2 {
 
 /* Hover effect on the title */
 .group-1:hover .project-title-1 {
-    color: #007BFF;
+    color: #ffb400;
     transform: translateY(-5px);
 }
 
@@ -496,7 +516,7 @@ h2 {
     }
 
     .project-image {
-        height: 200px;
+        height: 100px;
     }
 }
 
