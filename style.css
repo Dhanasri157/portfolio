@@ -383,8 +383,20 @@ ul {
 .ps{
     width: 40%;
 }
+.css{
+    width: 40%;
+}
 .html{
-    width: 50%;
+    width: 60%;
+}
+.js{
+    width: 40%;
+}
+.python{
+    width: 20%;
+}
+.sql{
+    width: 60%;
 }
 .skills-Container .skill {
     width: 500px;
