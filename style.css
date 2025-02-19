@@ -145,11 +145,10 @@ nav {
 }
 
 h1 {
-    font-size: xx-large;
+    font-size: 26px;
     text-align: center;
     padding: 50;
-
-}
+    }
 a{
     color: white;
 
